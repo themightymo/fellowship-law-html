@@ -1,0 +1,7 @@
+# BEGIN fellowship-law-html
+# Managed by .github/workflows/deploy.yml: on each deploy this block replaces
+# the matching block in the server's .htaccess; rules outside it are kept.
+<IfModule mod_alias.c>
+Redirect 301 /home.html /index.html
+</IfModule>
+# END fellowship-law-html

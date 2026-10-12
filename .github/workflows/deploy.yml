@@ -32,3 +32,18 @@ jobs:
             --exclude '.htaccess' --exclude '.well-known' \
             -e "ssh -p ${{ secrets.SG_PORT }}" \
             ./ "${{ secrets.SG_USER }}@${{ secrets.SG_HOST }}:${{ secrets.SG_PATH }}"
+
+      # Merge the repo's .htaccess block into the server's .htaccess, keeping
+      # any rules SiteGround (or anyone else) added outside the block.
+      - name: Merge .htaccess rules
+        env:
+          SG_HOST: ${{ secrets.SG_HOST }}
+          SG_USER: ${{ secrets.SG_USER }}
+          SG_PORT: ${{ secrets.SG_PORT }}
+          SG_PATH: ${{ secrets.SG_PATH }}
+        run: |
+          REMOTE="$SG_USER@$SG_HOST"
+          ssh -p "$SG_PORT" "$REMOTE" "cat '${SG_PATH}.htaccess' 2>/dev/null || true" > server.htaccess
+          sed '/^# BEGIN fellowship-law-html$/,/^# END fellowship-law-html$/d' server.htaccess | sed '/./,$!d' > rest.htaccess
+          { cat .htaccess; echo; cat rest.htaccess; } > merged.htaccess
+          rsync -e "ssh -p $SG_PORT" merged.htaccess "$REMOTE:${SG_PATH}.htaccess"
