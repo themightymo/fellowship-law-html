@@ -1,0 +1,34 @@
+# Deploys main to SiteGround (https://fellowshiplaw.notstaging.dev/) over SSH.
+# Required repo secrets: SG_SSH_KEY, SG_HOST, SG_USER, SG_PORT, SG_PATH (see README).
+name: Deploy to SiteGround
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency: deploy-siteground
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SG_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p ${{ secrets.SG_PORT }} -H ${{ secrets.SG_HOST }} >> ~/.ssh/known_hosts
+
+      # --delete mirrors the repo, removing server files that aren't in it.
+      # SiteGround's own .htaccess and .well-known (SSL) are left alone.
+      # Add --dry-run to the rsync flags for a first run to preview the file list.
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete \
+            --exclude '.git*' --exclude '.github' --exclude 'README.md' \
+            --exclude '.htaccess' --exclude '.well-known' \
+            -e "ssh -p ${{ secrets.SG_PORT }}" \
+            ./ "${{ secrets.SG_USER }}@${{ secrets.SG_HOST }}:${{ secrets.SG_PATH }}"
