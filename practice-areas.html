@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fellowship Law Group — Practice Areas</title>
+<script src="js/vendor/react.js"></script>
+<script src="js/vendor/react-dom.js"></script>
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prata&amp;family=Libre+Baskerville:wght@400..700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a{color:#BD2914}a:hover{color:#7E1A0C}
+.dd{position:relative}.dd-m{display:none}.dd:hover .dd-m,.dd:focus-within .dd-m{display:block}.dd-m a:hover{background:#F6EFE4;color:#2A1713}
+.btn{transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s cubic-bezier(.34,1.56,.64,1);will-change:transform}.btn:hover,.btn:focus-visible{transform:translate(-4px,-4px) rotate(-2deg);box-shadow:6px 6px 0 #2A1713}.btn:nth-of-type(2):hover,.btn:nth-of-type(2):focus-visible{transform:translate(-4px,-5px) rotate(1.5deg)}.btn:nth-of-type(3):hover,.btn:nth-of-type(3):focus-visible{transform:translate(-4px,-4px) rotate(-1deg) scale(1.03)}.btn:active{transform:translate(0,0) rotate(0) scale(.95);box-shadow:0 0 0 #2A1713;transition-duration:.08s}@media (prefers-reduced-motion:reduce){.btn,.btn:hover,.btn:focus-visible,.btn:active{transition:none;transform:none}}
+.pa-card{transition:background .2s}.pa-card:hover{background:#FBF8F3}
+.acc{max-width:44em;margin:0 0 1.6em;border-top:3px solid #BD2914}.acc details{border-bottom:1px solid rgba(189,41,20,.35)}.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 4px;min-height:44px;font-family:'Prata',serif;font-size:clamp(20px,1.9vw,24px);line-height:1.3;color:#2A1713}.acc summary::-webkit-details-marker{display:none}.acc summary:hover{color:#BD2914}.acc summary:focus-visible{outline:2px solid #BD2914;outline-offset:2px}.acc summary svg{flex:0 0 auto;color:#BD2914;transition:transform .25s ease}.acc details[open] summary svg{transform:rotate(45deg)}.acc details p{margin:0;padding:0 48px 22px 4px;font-size:18px;line-height:1.7;max-width:40em}@media (prefers-reduced-motion:reduce){.acc summary svg{transition:none}}
+.chk{margin:0 0 1.4em;padding:0;list-style:none;max-width:40em}.chk li{position:relative;padding:12px 0 12px 32px;border-bottom:1px solid rgba(189,41,20,.25);font-size:19px;line-height:1.55}.chk li:before{content:"";position:absolute;left:4px;top:23px;width:12px;height:2px;background:#BD2914}
+</style>
+</helmet>
+<div style="background:#F6EFE4;color:#2A1713;font-family:'Libre Baskerville',serif;font-size:19px;line-height:1.6;min-height:100%">
+    <header style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:28px clamp(20px,5vw,72px)">
+    <a href="index.html" style="display:block"><img src="images/fellowship-law-group-logo.png" alt="Fellowship Law Group PLLC" style="height:60px;width:auto;display:block"></a>
+    <nav style="display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;font-weight:500;font-size:16px;letter-spacing:.01em">
+      <div class="dd"><a href="about.html" style="color:#2A1713;text-decoration:none;min-height:44px;display:flex;align-items:center">About Us<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" style="margin-left:8px"><path d="M2 4l4 4 4-4"></path></svg></a><div class="dd-m" style="position:absolute;top:100%;left:0;z-index:20;min-width:230px;background:#FBF8F3;border:2px solid #BD2914"><a href="about.html#our-lawyers" style="display:block;padding:12px 22px;min-height:44px;box-sizing:border-box;color:#2A1713;text-decoration:none;white-space:nowrap">Our Team</a><a href="about.html#our-philosophy" style="display:block;padding:12px 22px;min-height:44px;box-sizing:border-box;color:#2A1713;text-decoration:none;white-space:nowrap">Our Philosophy</a></div></div>
+      <div class="dd"><a href="practice-areas.html" aria-current="page" style="color:#2A1713;text-decoration:none;min-height:44px;display:flex;align-items:center;border-bottom:2px solid #BD2914">Practice Areas<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" style="margin-left:8px"><path d="M2 4l4 4 4-4"></path></svg></a><div class="dd-m" style="position:absolute;top:100%;left:0;z-index:20;min-width:230px;background:#FBF8F3;border:2px solid #BD2914"><a href="#employment" style="display:block;padding:12px 22px;min-height:44px;box-sizing:border-box;color:#2A1713;text-decoration:none;white-space:nowrap">Employment</a><a href="#entertainment" style="display:block;padding:12px 22px;min-height:44px;box-sizing:border-box;color:#2A1713;text-decoration:none;white-space:nowrap">Entertainment</a><a href="#sexual-abuse" style="display:block;padding:12px 22px;min-height:44px;box-sizing:border-box;color:#2A1713;text-decoration:none;white-space:nowrap">Sexual Abuse</a></div></div>
+      <a href="#matter-history" style="color:#2A1713;text-decoration:none;min-height:44px;display:flex;align-items:center">Matter History</a>
+      <a href="#faq" style="color:#2A1713;text-decoration:none;min-height:44px;display:flex;align-items:center">FAQ</a>
+      <a class="btn" href="#contact" style="background:#BD2914;color:#F6EFE4;text-decoration:none;padding:0 26px;min-height:48px;display:flex;align-items:center;font-weight:700">Free Consultation</a>
+    </nav>
+  </header>
+  <div style="height:3px;background:#BD2914;margin:0 clamp(20px,5vw,72px)"></div>
+  <main>
+  <div style="padding:0 clamp(20px,5vw,72px)">
+
+    <div id="practice-areas" style="padding:72px 0 64px">
+      <div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:14px">What We Do</div>
+      <h1 style="margin:0 0 28px;font-family:'Prata',serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1.08;color:#2A1713">Practice Areas</h1>
+      <p style="margin:0 0 48px;font-family:'Prata',serif;font-weight:400;font-size:clamp(24px,2.4vw,32px);line-height:1.38;color:#BD2914;max-width:30em">Three practices, one conviction: the people we represent should never have to face powerful institutions, industries, or wrongdoers alone.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:20px 40px">
+        <a class="pa-card" href="#employment" style="flex:1 1 260px;color:#2A1713;text-decoration:none;border-top:3px solid #BD2914;padding:18px 0 8px;display:block"><div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914">For the Employee</div><div style="margin-top:8px;font-family:'Prata',serif;font-size:28px;line-height:1.2">Employment Law</div><div style="margin-top:10px;font-size:16px;line-height:1.6;max-width:22em">Wrongful termination, discrimination, harassment, retaliation, and wage theft.</div></a>
+        <a class="pa-card" href="#entertainment" style="flex:1 1 260px;color:#2A1713;text-decoration:none;border-top:3px solid #BD2914;padding:18px 0 8px;display:block"><div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914">For the Independent Artist</div><div style="margin-top:8px;font-family:'Prata',serif;font-size:28px;line-height:1.2">Entertainment Law</div><div style="margin-top:10px;font-size:16px;line-height:1.6;max-width:22em">Counsel from development through production, festivals, and distribution.</div></a>
+        <a class="pa-card" href="#sexual-abuse" style="flex:1 1 260px;color:#2A1713;text-decoration:none;border-top:3px solid #BD2914;padding:18px 0 8px;display:block"><div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914">For Survivors</div><div style="margin-top:8px;font-family:'Prata',serif;font-size:28px;line-height:1.2">Sexual Abuse &amp; Assault</div><div style="margin-top:10px;font-size:16px;line-height:1.6;max-width:22em">Holding individuals and institutions accountable, at your pace.</div></a>
+      </div>
+    </div>
+
+    <section id="employment" style="display:flex;flex-wrap:wrap;gap:24px 72px;align-items:flex-start;padding:72px 0;border-top:1px solid #BD2914">
+      <div style="flex:0 0 300px;max-width:100%;position:sticky;top:24px">
+        <img src="images/employment-law.jpg" alt="Black’s Law Dictionary, notepads, and pencils on a wooden desk" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;margin-bottom:20px">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:10px">For the Employee</div>
+        <h2 style="margin:0;font-family:'Prata',serif;font-weight:400;font-size:clamp(32px,3.2vw,46px);line-height:1.12;color:#2A1713">Employment Law</h2>
+        <div style="margin-top:14px;font-size:15px;line-height:1.5">Attorney <a href="about.html#mary-olszewska">Mary Olszewska</a></div>
+      </div>
+      <div style="flex:1 1 480px;min-width:0">
+        <p style="margin:0 0 1.1em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.6vw,34px);line-height:1.35;color:#BD2914;max-width:30em">Work is more than a paycheck.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">It is how we support ourselves and our families, build careers, form lasting relationships, and create a sense of security and purpose. When something goes wrong at work—when you are harassed, discriminated or retaliated against, underpaid, or lose your job, the impact can be traumatic and disruptive to life and events far beyond the workplace.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">At Fellowship Law, we represent employees.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">We believe that with work comes dignity. This includes the right to be treated fairly and speak up about discrimination, harassment, unsafe working conditions, or wrongdoing without fear of retaliation. Unfortunately, workplaces can fail to live up to these principles. And when an employer has access to greater resources, information, and power, the imbalance can feel intimidating and paralyzing, leaving you unsure of what your rights are or what action to take.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">That is where we come in.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">We represent employees in matters involving wrongful termination, discrimination, harassment, retaliation, wage theft, and workplace misconduct. Our role begins with careful listening to gain a thorough understanding of exactly what happened so we can provide you with clear and candid advice specific to your situation. Because no two employment issues are the same.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Attorney Mary Olszewska brings more than 15 years of experience representing workers in employment and civil rights matters. A seasoned litigator, she intuits that employment matters are about more than statutes, documents, and damages. They are about lives and livelihoods—careers, reputations, financial and emotional security, a sense of purpose and belonging that was violated by someone else’s actions.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">At Fellowship Law, we approach every case with both rigor and humanity. We will tell you what we think, explain why we think it, and help you make informed decisions about what comes next. When litigation is necessary, we are prepared to see it through. When an earlier resolution better serves your interests, we pursue it thoughtfully and strategically. We take the time to understand what happened to you, what matters to you, and what you want your life to look like on the other side of the dispute.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">Our goal is not simply to resolve a legal claim. It is to help restore some of the agency, power, and dignity that can be lost when a workplace betrays your trust and breaks the law.</p>
+      </div>
+    </section>
+
+    <section id="entertainment" style="display:flex;flex-wrap:wrap;gap:24px 72px;align-items:flex-start;padding:72px 0;border-top:1px solid #BD2914">
+      <div style="flex:0 0 300px;max-width:100%;position:sticky;top:24px">
+        <img src="images/zachary-weil.jpg" alt="Attorney Zachary Weil" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;margin-bottom:20px">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:10px">For the Independent Artist</div>
+        <h2 style="margin:0;font-family:'Prata',serif;font-weight:400;font-size:clamp(32px,3.2vw,46px);line-height:1.12;color:#2A1713">Entertainment Law</h2>
+        <div style="margin-top:14px;font-size:15px;line-height:1.5">Attorney <a href="about.html#zachary-weil">Zachary Weil</a></div>
+      </div>
+      <div style="flex:1 1 480px;min-width:0">
+        <p style="margin:0 0 1.1em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.6vw,34px);line-height:1.35;color:#BD2914;max-width:30em">Making independent art has never been easy.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Today, creators find themselves trying to navigate an industry defined by shrinking budgets, volatile distribution models, fragmented audiences, emerging technologies, and increasing pressure to do more with less. The economics continue to change. The platforms rise and wane. The only constant is that artists will continue to create because they have something to say—because the world needs their perspective, imagination, humor, criticism, and humanity.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">The challenges of making the work do not mean you should have to make it alone.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Independent filmmaking and creative work are fundamentally collaborative. You rely on producers, performers, crew, investors, musicians, distributors, and countless others to help bring an idea into the world. Your lawyer should be part of that creative team—not someone who simply identifies problems from the sidelines, but an active ally who understands what you are trying to accomplish and helps you find a practical path forward at all levels of the creative process.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">At Fellowship Law, this perspective comes from experience.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Attorney Zachary Weil is an Emmy® Award-winning filmmaker who came to entertainment law from the independent film world. He knows what it means to build a project from nothing: to raise money, stretch an inadequate budget, negotiate with collaborators, clear music and footage, navigate guild requirements, confront impossible deadlines, prepare a film for distribution, take a film to A-list festivals, and make difficult decisions when there is never quite enough money, time, or leverage.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">He also knows how personal the work can be.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Independent artists pour years of their lives into projects that may begin as little more than an idea and a handful of people willing to see it through. When your resources are limited, every agreement matters. Every dollar matters. Every relationship matters. Good legal counsel should recognize those realities.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">That is the kind of counsel we strive to provide.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">We help independent filmmakers, producers, writers, artists, and creative companies protect what they are building without losing sight of why they are building it. Our advice is practical, strategic, and grounded in the realities of independent production. Sometimes this means identifying a serious legal risk. Just as often, it means helping find a reasonable solution that allows the work to continue.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Artists need advocates. They need collaborators. And sometimes, they simply need someone in their corner who understands what it took to get this far.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">We do—because we have been there.</p>
+
+        <h3 style="margin:2.4em 0 .5em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.2;color:#2A1713">Supporting the Full Creative Lifecycle</h3>
+        <p style="margin:0 0 1.6em;font-size:20px;line-height:1.72;max-width:40em">Our entertainment practice supports projects from their earliest stages of development through production, distribution, and beyond.</p>
+        <div class="acc">
+          <details><summary><span>Business &amp; Entity Formation</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Forming production companies and LLCs, structuring creative ventures, and establishing the legal foundation necessary to move a project forward.</p></details>
+          <details><summary><span>Contracts &amp; Negotiations</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Drafting and negotiating agreements with producers, writers, directors, performers, crew, investors, financiers, vendors, and creative partners—with an emphasis on clear expectations and workable relationships.</p></details>
+          <details><summary><span>Music, Footage &amp; Rights Licensing</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Clearing music, archival footage, photographs, artwork, and other third-party materials; negotiating licenses; and advising on fair use and other rights issues.</p></details>
+          <details><summary><span>Copyright, Trademark &amp; Chain of Title</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Protecting creative works through copyright and trademark counseling, registrations, assignments, option and acquisition agreements, and the documentation necessary to establish clean chain of title.</p></details>
+          <details><summary><span>Production Counsel</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Providing practical legal support throughout development, pre-production, principal photography, and post-production, including talent and crew agreements, SAG-AFTRA and IATSE issues, releases, employment matters, and wage-and-hour compliance.</p></details>
+          <details><summary><span>Financing &amp; Incentives</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Advising on equity investments, financing structures, film incentives and tax credits, investor documentation, and the legal issues involved in assembling an independent production.</p></details>
+          <details><summary><span>Clearance &amp; E&amp;O</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Reviewing scripts, cuts, titles, trademarks, likeness issues, and potentially sensitive material; providing clearance and fair-use analysis; and helping productions prepare for errors-and-omissions insurance and delivery.</p></details>
+          <details><summary><span>Distribution &amp; Festivals</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v12M3 9h12"></path></svg></summary><p>Reviewing and negotiating distribution and licensing agreements, advising filmmakers as they navigate sales and festival opportunities, and helping protect the long-term value of their work.</p></details>
+        </div>
+
+        <h3 style="margin:2.4em 0 .8em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.2;color:#2A1713">Your Lawyer Should Be a Part of the Creative Process</h3>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">The goal of entertainment counsel should not simply be to tell an artist what cannot be done.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Our job is to understand what you are trying to accomplish, identify the risks that actually matter, and help you find a responsible way to move forward. Because these projects simply would not happen without the will and determination you as the artist provide.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">From the first agreement to the final delivery materials, Fellowship Law works to protect your rights, your relationships, and the work itself. We bring legal knowledge to the table, but we also bring something harder to teach: an understanding of what it feels like to be in the trenches trying to make something meaningful with far too little.</p>
+        <div style="margin:1.4em 0 .4em"><div style="font-family:'Prata',serif;font-weight:400;font-size:clamp(30px,3.4vw,46px);line-height:1.2;color:#BD2914">You made the choice to create something.</div><div style="font-family:'Prata',serif;font-weight:400;font-size:clamp(30px,3.4vw,46px);line-height:1.2;color:#BD2914">You should not have to protect it alone.</div></div>
+      </div>
+    </section>
+
+    <section id="sexual-abuse" style="display:flex;flex-wrap:wrap;gap:24px 72px;align-items:flex-start;padding:72px 0;border-top:1px solid #BD2914">
+      <div style="flex:0 0 300px;max-width:100%;position:sticky;top:24px">
+        <img src="images/mary-olszewska.png" alt="Attorney Mary Olszewska" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;margin-bottom:20px">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:10px">For Survivors</div>
+        <h2 style="margin:0;font-family:'Prata',serif;font-weight:400;font-size:clamp(32px,3.2vw,46px);line-height:1.12;color:#2A1713">Sexual Abuse &amp; Assault</h2>
+        <div style="margin-top:14px;font-size:15px;line-height:1.5">Attorney <a href="about.html#mary-olszewska">Mary Olszewska</a></div>
+      </div>
+      <div style="flex:1 1 480px;min-width:0">
+        <p style="margin:0 0 1.1em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.6vw,34px);line-height:1.35;color:#BD2914;max-width:30em">Sexual abuse is an act of profound violation.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">It can take away a person’s sense of safety, control, and trust. Survivors may carry fear, anger, shame, confusion, or grief long after the abuse itself has ended. For some, the trauma can make it difficult to speak about what took place. It can affect relationships, work, sleep, physical health, and the simple ability to feel safe in the world.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">And when the person who caused the harm was someone you trusted—or when an institution that should have protected you failed to do so—the sense of betrayal can be overwhelming.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">You do not have to face all this alone.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">At Fellowship Law, we represent survivors of sexual abuse and assault with compassion, patience, and resolve. We understand that coming to a lawyer may itself feel frightening. Telling your story can be difficult. Deciding whether to take action can feel even harder.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Our first job is to listen.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">You control the pace of the conversation. We explain your options clearly, answer your questions honestly, and help you decide what justice means for you. There is no single path forward for every survivor. For some, accountability means bringing a civil case. For others, it means finally understanding their rights, confronting an institution that failed them, or reclaiming a measure of control that was taken away.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">Whatever the path, you deserve an advocate beside you.</p>
+
+        <h3 style="margin:2.4em 0 .8em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.2;color:#2A1713">Compassion Does Not Mean Weakness</h3>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Attorney Mary Olszewska has spent more than 15 years representing people whose rights and dignity have been violated, including survivors of sexual abuse. Her approach begins with empathy, but it does not end there.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Mary is a trial lawyer.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">She has built her career standing beside individuals confronting defendants and institutions with far greater resources. She understands that representing a survivor requires more than knowing the law. It requires patience. It requires trust. It requires the ability to listen closely to painful truths without looking away. And when accountability requires it, it demands the preparation and resolve to take a case to trial.</p>
+        <div style="margin:1.8em 0 1.8em;padding:28px 0;border-top:3px solid #BD2914;border-bottom:1px solid #BD2914;max-width:40em">
+          <div style="font-family:'Prata',serif;font-weight:400;font-size:clamp(48px,6vw,80px);line-height:1;color:#BD2914">$12.5 million</div>
+          <div style="margin-top:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#2A1713">Jury verdict in a sexual-abuse case — part of Mary’s trial experience</div>
+        </div>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">That experience reflects the kind of lawyer Mary is today: a thoughtful advocate who understands the importance of a survivor’s story, prepares carefully for the difficult road ahead, and is willing to pursue accountability when the facts and the law call for it.</p>
+
+        <h3 style="margin:2.4em 0 .8em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.2;color:#2A1713">Holding People—and Institutions—Accountable</h3>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Sexual abuse does not always occur in isolation. Schools, churches, employers, youth organizations, medical providers, residential facilities, and other institutions may have opportunities to prevent abuse, respond to warning signs, investigate misconduct, or protect vulnerable people.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">When those institutions fail, the legal system can provide a means of accountability.</p>
+        <div style="margin:1.6em 0 .6em;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914">We represent survivors in matters involving</div>
+        <ul class="chk">
+          <li>Sexual assault and abuse</li>
+          <li>Childhood sexual abuse</li>
+          <li>Abuse by clergy, teachers, coaches, employers, medical professionals, and other trusted individuals</li>
+          <li>Abuse occurring in schools, churches, workplaces, healthcare settings, and other institutions</li>
+          <li>Institutional negligence and failures to protect</li>
+          <li>Sexual harassment and coercion</li>
+          <li>Retaliation against individuals who report abuse or misconduct</li>
+        </ul>
+
+        <h3 style="margin:2.4em 0 .8em;font-family:'Prata',serif;font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.2;color:#2A1713">You Are More Than What Happened to You</h3>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">A lawsuit cannot erase abuse. It cannot give back the time that was taken or undo the harm that was caused.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">But accountability can matter.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">Being heard can matter. Having someone finally take what happened seriously can matter. Holding a person or institution responsible can matter. And for some survivors, taking action can be one part of reclaiming the power and autonomy that abuse attempted to take away.</p>
+        <p style="margin:0 0 1.2em;font-size:20px;line-height:1.72;max-width:40em">At Fellowship Law, we will never reduce you to what happened to you. You are a person first. Your story belongs to you. Your decisions belong to you.</p>
+        <p style="margin:1.5em 0 1.6em;padding-left:24px;border-left:3px solid #BD2914;font-family:'Prata',serif;font-weight:400;font-size:clamp(22px,2.1vw,28px);line-height:1.45;max-width:30em">Our role is to listen, to advise, to protect, and—when you are ready—to stand beside you and fight.</p>
+      </div>
+    </section>
+
+    <div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between;padding:64px 0 56px;border-top:1px solid #BD2914">
+      <div style="flex:1 1 420px">
+        <h2 style="margin:0 0 10px;font-family:'Prata',serif;font-weight:400;font-size:clamp(30px,3.2vw,44px);line-height:1.15;color:#BD2914">Let’s talk about what happened.</h2>
+        <p style="margin:0;font-size:18px;line-height:1.6;max-width:36em">A confidential, no-cost conversation is the first step. We listen, then tell you candidly what we think.</p>
+      </div>
+      <a class="btn" href="#contact" style="background:#BD2914;color:#F6EFE4;text-decoration:none;padding:0 32px;min-height:56px;display:flex;align-items:center;font-weight:700;font-size:17px">Free Consultation</a>
+    </div>
+  </div>
+  </main>
+
+  <div style="height:1px;background:#BD2914;margin:24px clamp(20px,5vw,72px) 0"></div>
+  <footer id="contact" style="align-items:flex-start;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;color:#2A1713;padding:36px clamp(20px,5vw,72px);font-size:16px">
+    <img src="images/fellowship-law-group-logo.png" alt="Fellowship Law Group PLLC" style="height:40px;width:auto;display:block">
+    <div style="display:flex;flex-wrap:wrap;gap:24px 72px;line-height:1.6"><div><div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:8px">Location</div><div>2429 Nicollet Ave., Floor 2<br>Minneapolis, MN 55404</div></div><div><div style="font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#BD2914;margin-bottom:8px">Contact</div><div>molszewska(at)fellowship.law<br><a href="tel:+16122498613" style="color:inherit;text-decoration:none">(612) 249-8613</a></div></div></div>
+    <nav aria-label="Footer" style="flex:0 0 100%;display:flex;flex-wrap:wrap;gap:4px 28px"><a href="#join-our-firm" style="color:#2A1713;text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Join Our Firm</a><a href="#privacy-policy" style="color:#2A1713;text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Privacy Policy</a><a href="#terms" style="color:#2A1713;text-decoration:none;min-height:44px;display:inline-flex;align-items:center">Terms</a></nav>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9600}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
